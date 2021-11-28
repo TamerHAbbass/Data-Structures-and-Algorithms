@@ -34,15 +34,35 @@ relative position with respect to the others. Some possible unordered list opera
      Assume the item is in the list.
 
 """
-class Node:
-    def __init__(self, data=None):
-        self.data = data
-        self.next = None
+
 
 class LinkedList:
     def __init__(self, head=None):
         self.head = head
         self.tail = None
-        self.length = 0
+        self.size = 0
 
-    
+    def isEmpty(self):
+        return self.head == None
+
+    def size(self):
+        return self.size
+
+
+
+class Node:
+    def __init__(self, data=None):
+        self.data = data
+        self.next = None
+
+    def getData(self):
+        return self.data
+
+    def getNext(self):
+        return self.next
+
+    def setData(self, newdata):
+        self.data = newdata
+
+    def setNext(self, newnext):
+        self.next = newnext    
