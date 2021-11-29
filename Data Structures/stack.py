@@ -43,7 +43,7 @@ class Stack:
 
 
 """
-Deque Implement of a stack.
+Deque implementation of a stack.
 """
 from collections import deque
 
@@ -57,7 +57,7 @@ myStack.pop('Test Item')
 
 
 """
-Threaded Implementation of a Stack.
+Threaded implementation of a Stack.
 """
 
 from queue import LifoQueue
