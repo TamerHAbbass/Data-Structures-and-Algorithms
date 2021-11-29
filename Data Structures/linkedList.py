@@ -4,15 +4,6 @@ Linked List
     The structure of a list is a collection of items where each item holds a relative position with respect to
     the others. Some possible operations are given below.
 
-    - Time and Space Complexity
-        - Time
-            Indexing - O(n),
-            Insertion - O(1),
-            Search - O(n).
-            Deletion - O(1),
-    
-        - Space
-            Space - O(n)
 """
 
 
@@ -35,7 +26,7 @@ class Node:
 
 
 """
-    - Unordered List
+    - Unordered List Methods
 
         - List() creates a new list that is empty. It needs no parameters and returns an empty list.
         
