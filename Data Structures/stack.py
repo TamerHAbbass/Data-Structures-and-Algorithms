@@ -64,8 +64,8 @@ from queue import LifoQueue
 
 myStack = LifoQueue()
 
-# Add items to stack
+# Add an item to a stack
 myStack.put('a')
 
-# Remove items from stack
+# Remove an item from a stack
 myStack.get()
