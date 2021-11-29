@@ -21,3 +21,51 @@ Stack
 
         - size() returns the number of items on the stack. It needs no parameters and returns an integer.
 """
+
+class Stack:
+     def __init__(self):
+         self.items = []
+
+     def isEmpty(self):
+         return self.items == []
+
+     def push(self, item):
+         self.items.append(item)
+
+     def pop(self):
+         return self.items.pop()
+
+     def peek(self):
+         return self.items[len(self.items)-1]
+
+     def size(self):
+         return len(self.items)
+
+
+"""
+Deque Implement of a stack.
+"""
+from collections import deque
+
+myStack = deque()
+
+# Add items to stack
+myStack.append('Test Item')
+
+# Remove items from stack
+myStack.pop('Test Item')
+
+
+"""
+Threading Implementation of a Stack.
+"""
+
+from queue import LifoQueue
+
+myStack = LifoQueue()
+
+# Add items to stack
+myStack.put('a')
+
+# Remove items from stack
+myStack.get()
