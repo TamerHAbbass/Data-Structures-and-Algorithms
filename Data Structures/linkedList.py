@@ -1,25 +1,17 @@
 """
 Linked List
 
-    The structure of an unordered list, as described above, is a collection of items where each item holds a 
-    relative position with respect to the others. Some possible unordered list operations are given below.
+    The structure of a list is a collection of items where each item holds a relative position with respect to
+    the others. Some possible operations are given below.
 
     - Time and Space Complexity
         - Time
-
-        Linked lists have most of their benefit when it comes to the insertion and deletion of nodes in the list. 
-        Unlike the dynamic array, insertion and deletion at any part of the list takes constant time.
-    
             Indexing - O(n),
             Insertion - O(1),
             Search - O(n).
             Deletion - O(1),
     
         - Space
-
-        Linked lists hold two main pieces of information (the value and pointer) per node. This means that the amount 
-        of data stored increases linearly with the number of nodes in the list. Therefore, the space complexity of the linked list is linear:
-
             Space - O(n)
 """
 
