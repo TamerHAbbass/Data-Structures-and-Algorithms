@@ -57,7 +57,7 @@ myStack.pop('Test Item')
 
 
 """
-Threading Implementation of a Stack.
+Threaded Implementation of a Stack.
 """
 
 from queue import LifoQueue
