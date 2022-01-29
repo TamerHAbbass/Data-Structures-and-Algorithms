@@ -17,10 +17,21 @@ cards as possible. Write a function to help Bob locate the card.
 
 
 def locate_card(cards, query):
-    pass
+    
+    # create a var with the value of 0
+    position = 0
 
+    while True:
+        if cards == []:
+            return -1
 
+        if cards[position] == query:
+            return position
 
+        position += 1
+
+        if position == len(cards):
+            return -1
 
 
               # ################ #
@@ -62,6 +73,33 @@ test.append({
         'query': 7
     },
     'output': 0
+})
+
+# cards does not contain query
+test.append({
+    'input': {
+        'cards': [9, 7, 5, 2, -9],
+        'query': 6
+    },
+    'output': -1
+})
+
+# cards is empty
+test.append({
+    'input': {
+        'cards': [],
+        'query': 7
+    },
+    'output': -1
+})
+
+# query occurs multiple times
+test.append({
+    'input': {
+        'cards': [8, 8, 6, 6, 6, 6, 6, 6, 3, 2, 2, 0, 0, 0, 0, 0],
+        'query': 6
+    },
+    'output': 2
 })
 
 
