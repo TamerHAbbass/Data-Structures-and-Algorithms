@@ -17,21 +17,28 @@ cards as possible. Write a function to help Bob locate the card.
 
 
 def locate_card(cards, query):
-    
-    # create a var with the value of 0
     position = 0
 
-    while True:
-        if cards == []:
-            return -1
+    print('\ncards:', cards)
+    print('query:', query)
 
+    while position < len(cards):
+        # print('position:', position)
+        
         if cards[position] == query:
             return position
 
         position += 1
+    return -1
 
-        if position == len(cards):
-            return -1
+
+
+              # ################ #
+###############    Complexity    ##############
+              # ################ #
+
+
+# Linear Solution is O(n)
 
 
               # ################ #
